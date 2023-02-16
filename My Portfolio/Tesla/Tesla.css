@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Gotham SSm Bold';
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2)
+}
+@font-face {
+    font-family: 'Gotham SSm Medium';
+    src: url(./Fonts/GothamSSm-Medium_Web.woff2)
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/* * {
+    font-family: 'Gotham SSm Medium';
+} */
+
+body {
+    /* border:1px solid black; */
+    /* width:1200px; */
+    margin: 0;
+    /* take out all margins */
+    padding: 0;
+
+}
+
+svg {
+    /* border:1px solid black; */
+    height: 20px;
+    width: 120px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: center;
+    margin: 0px;
+    
+}
+
+h1 {
+    /* border: 1px solid black; */
+    font-size: 34px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding: 0px 24px;
+    font-family: 'Gotham SSm Medium';
+    animation: title 350ms linear;
+}
+
+section>p {
+    margin: 10px;
+    animation: schedule 350ms linear;
+}
+
+section>p a {
+    border-bottom: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#page1 {
+    background-image: url(./images/page1.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page2 {
+    background-image: url(./images/page2.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page3 {
+    background-image: url(./images/page3.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page4 {
+    background-image: url(./images/page4.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page5 {
+    background-image: url(./images/page5.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page6 {
+    background-image: url(./images/page6.webp);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#page7 {
+    background-image: url(./images/page7.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    margin: 0;
+}
+
+#navi {
+    /* border: 1px solid black; */
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Gotham SSm Medium'
+    /* to make the width of the navi bar to the end */
+}
+
+#navi li:hover {
+    background-color: #bfbfbf;
+    transition: 300ms;
+    /* text-decoration: underline; */
+    /* padding: 4px 8px; */
+}
+
+.middle-nav {
+    /* border: 1px solid black; */
+    columns: 6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.middle-nav>li {
+    /* border: 1px solid black; */
+    margin: 0;
+    margin-right: 10px;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.middle-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.right-nav {
+    /* border: 1px solid black; */
+    columns: 3;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+.right-nav>li {
+    /* border: 1px solid black; */
+    margin: 0 10px;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.bottom {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin-top: 425px;
+    font-family: 'Gotham SSm Medium';
+}
+
+.custom {
+    background-color: #171A20CC;
+    color: rgba(245, 245, 245, 0.847);
+    padding: 4px 24px;
+    border-radius: 3px;
+    font: 14px;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    animation: lcustom 350ms linear;
+}
+
+.view {
+    background-color: #F4F4F4A6;
+    padding: 4px 24px;
+    border-radius: 3px;
+    font: 14px;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    animation: rview 350ms linear;
+}
+#page1 div i{
+    margin-top:70px;
+    animation: chevron 1.5s linear infinite;
+    color: black; 
+}
+
+/* ========= CUSTOM SCROLL BAR ========= */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #c9d6ff, #e2e2e2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(195, 185, 185);
+}
+/* ============ ANIMATIONS ============ */
+
+@keyframes chevron {
+    30% {
+        transform:translateY(5px)
+    }
+    50% { 
+        transform:translate(1px)
+    }
+    80% {
+        transform:translateY(3px)
+    }
+    100% { 
+        transform:translateY(1px)
+    }
+}
+
+@keyframes title {
+    0% {
+        transform:translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes schedule {
+    0% { 
+        transform:translateY(50px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity: 1; 
+    }
+}
+@keyframes lcustom {
+    0% { 
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes rview {
+    0% { 
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

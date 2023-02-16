@@ -1,0 +1,226 @@
+/* Corgi colours
+#181818
+#760001
+#1c1a19
+#706b64 
+*/
+@font-face {
+    font-family: ballpark;
+    src: url(./fonts/ballpark.woff);
+}
+
+@font-face {
+    font-family: dayrom;
+    src: url(./fonts/dayrom.woff);
+}
+body {
+    background-image: url(./images/fond_jaune.png);
+    background-repeat: inherit;
+}
+#main-container {
+    width: 1200px;
+    margin:auto;
+}
+.logo {
+    /* border: 1px solid black; */
+    font-family: ballpark;
+    font-size: 50px;
+    margin-bottom: -20px;
+}
+
+.corgi {
+    /* ttf, otf and woff is good font files */
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.left {
+    font-size: 25px;
+}
+.home,.blog,.resume,.contact {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    font-size: 30px;
+}
+.blog {
+    text-decoration: none;
+
+}
+.right {
+    display: flex;
+}
+
+.right p:hover {
+    color:#760001;
+    transition: 100ms;
+    text-decoration: underline;
+}
+.line-break {
+    background-image: url(./images/separateur.png);
+    background-repeat: repeat-x;
+    /* border: 1px solid coral; */
+    width: 100%;
+    height: 5px;
+}
+
+#seoul {
+    /* border: 3px solid purple; */
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px black;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.seoul {
+    width: 100%;
+    height: 400px;
+    /* border-radius: 10px; */
+}
+
+.pic-text {
+    /* border: 2px solid red; */
+    color: white;
+    font: bolder;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+    /* border-radius: 0 0 6px 6px; */
+}
+
+.feedback {
+    /* border: 1px solid red; */
+    margin-left: 10px;
+}
+
+.article {
+    background-color: #760001;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.r-arrow {
+    margin-left: 10px;
+    height: 12px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+.epingle {
+    margin-right: 10px
+}
+
+section {
+    display: flex;
+}
+
+article {
+    /* border: 1px solid rgb(173, 26, 26); */
+    flex: 2;
+}
+.bulle {
+    position:absolute;
+    top: 120px;
+    left:-15px;
+}
+.bulle {
+    width: 15px;
+    height: 15px;
+}
+
+/* aside {
+    flex: 1;
+    background-color: #706b64;
+    text-align: justify;
+    position: relative;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: 20px;
+    font-weight: bolder;
+    color:white;
+    box-shadow: 5px 5px 10px black;
+} */
+.cute {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+.icons {
+    /* border: 1px solid red; */
+    align-self: flex-start;
+}
+.icons img {
+    width: 50px;
+    height: 50px;
+}
+#bottom-line {
+    text-align: center;
+}
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px
+}
+#bottom p {
+    font-size: 20px;
+}
+.b-two img {
+    border: 1px solid black;
+}
+.b-three ul {
+    /* border: 1px solid black; */
+    columns: 2;
+    list-style-image: url(./images/ico_liensexterne.png);
+    color: maroon;
+    padding-left: 2px;
+}
+/* .p {
+    width:
+    container > div:nth-of-type()
+    background:;
+    #transition1 {
+        transition: all 1s, height 3s 1s, width .2s; (on the height; 1s is the delay, then the height will change for 3s)
+    }
+    #transition1:hover {
+    }
+    
+} */
+
+th {
+    background-color: rgba(237, 149, 101, 0.611);
+}
+tr{
+    text-align: center;
+}
+
+#description {
+    vertical-align: top;
+}
+#name, #email, #message {
+    border: 2px solid red;
+    border-radius: 3px;
+}
