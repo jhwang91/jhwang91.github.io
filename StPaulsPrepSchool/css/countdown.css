@@ -1,0 +1,54 @@
+body {
+    display:grid;
+    place-items: center;
+    height: 97vh;
+    background: #00092f
+}
+.wrapper {
+    font-size: 40px;
+    line-height: 1.2em;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 900;
+}
+.number-area {
+    display: inline-block;
+    overflow: hidden;
+    width: 0.6em;
+    height: 1.2em;
+    padding: .5rem;
+    text-shadow: 0 4px 8px rgba(0,245,245,0.9);
+    color:darkgoldenrod;
+}
+.num {
+    font:inherit; 
+    word-break: break-all;
+    display: block; 
+    width: 0;
+    padding: 0 1.6em 0 0;
+    margin: 0, auto;
+    overflow: inherit;
+    animation: animate 0.5s steps(10) forwards infinite;
+}
+.num:before {
+    content: attr(data-attr);
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+@keyframes animate {
+    100% {
+        transform: translate3d(0, -10em, 0);
+    }
+}
+.n1 {
+    animation-iteration-count: 2;
+}
+.n2 {
+    animation-iteration-count: 4;
+}
+.n3 {
+    animation-iteration-count: 6;
+}
+
+
