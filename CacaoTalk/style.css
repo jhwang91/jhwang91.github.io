@@ -1,0 +1,129 @@
+/* input,
+#username {
+    height: 25px;
+    width: 200px;
+}
+
+input,
+#message {
+    height: 80px;
+    width: 200px;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  outline: 2px solid black;
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+  overflow: hidden;
+  height: 700px;
+  box-shadow: 11px 9px 20px 7px gray;
+}
+
+.container {
+  /* outline: 2px solid green; */
+  height: 560px;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+  padding: 5px;
+  /* text-align: center; */
+  overflow: scroll;
+  overflow-wrap: break-word;
+}
+
+.left {
+  /* display: flex; */
+  /* outline: 2px solid red; */
+  height: 50px;
+  width: 400px;
+  background-color: purple;
+  border-radius: 15px 15px 15px 0px;
+  line-height: 0%;
+  padding: 10px;
+  font-size: small;
+  box-shadow: 3px 7px 8px 0px pink;
+  margin-left: 15px;
+}
+
+.left:hover {
+  transform: scale(1.05);
+  transition: 0.15s linear;
+  cursor: pointer;
+  /* background-color: #eafffd; */
+}
+
+.right {
+  /* display: flex; */
+  /* outline: 2px solid green; */
+  height: 50px;
+  width: 400px;
+  background-color: blue;
+  border-radius: 15px 15px 0px 15px;
+  margin: 50px 20px 50px 50px;
+  color: white;
+  line-height: 0%;
+  padding: 10px;
+  font-size: small;
+  box-shadow: 3px 7px 8px 0px lightblue;
+}
+
+.right:hover {
+  transform: scale(1.05);
+  transition: 0.15s linear;
+  cursor: pointer;
+  /* background-color: #eafffd; */
+}
+
+.nameTime {
+  display: flex;
+  /* outline: 2px solid pink; */
+  height: 30px;
+  width: 350px;
+  color: black;
+  line-height: 0%;
+  font-size: small;
+  margin-top: 10px;
+  line-height: 0%;
+}
+
+h4 {
+  margin-right: 5px;
+}
+
+.leftBox,
+.rightBox {
+  display: flex;
+}
+
+.insertContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 8px;
+}
+
+#username {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 6px;
+  height: 20px;
+}
+
+#message {
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
