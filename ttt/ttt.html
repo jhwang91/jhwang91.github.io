@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./ttt.css" />
+    <script defer src="./ttt.js"></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+      <h1>Tic Tac Toe</h1>
+      <h2></h2>
+      <div>
+        <!-- Player <span class="display-player-player X">X</span>'s turn  showing who is next each turn -->
+      </div>
+      <div class="contentContainer"> <!-- content of our game -->
+        <div class="gameContainer"> <!-- our grid 9x9 -->
+            <div class="row">
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+            </div>
+            <div class="row">
+                <div id="box4"></div>
+                <div id="box5"></div>
+                <div id="box6"></div>
+            </div>
+            <div class="row">
+                <div id="box7"></div>
+                <div id="box8"></div>
+                <div id="box9"></div>
+            </div>
+          </div>
+          <button onclick="resetBoard()"><h2>Reset</h2></button>
+      </div>
+    </main>
+  </body>
+</html>
